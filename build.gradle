@@ -3,6 +3,7 @@ buildscript {
 	  	springDependencyManagementPluginVersion = '1.0.7.RELEASE'
 	}
 	repositories {
+		mavenLocal()
 		mavenCentral()
 		maven { url "https://repo.spring.io/snapshot" }
 		maven { url "https://repo.spring.io/milestone" }
@@ -31,7 +32,7 @@ allprojects {
 	}
 
   	ext {
-	  springBootDependenciesVersion = "2.2.0.RC1"
+	  springBootDependenciesVersion = "2.2.0.RELEASE"
 	  rSocketVersion = "1.0.0-RC5"
 	}
 
